@@ -5,5 +5,5 @@
 - Christian Carriel
 - Billy Fabian
 
-# Link del github:
+# Link del GitHub:
 https://github.com/matigallardoc/AsistenciaDuoc
