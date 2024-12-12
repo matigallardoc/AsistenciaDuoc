@@ -1,0 +1,45 @@
+#mapId {
+  height: 100vh; /* Hace que el mapa ocupe todo el alto de la pantalla */
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 10px; /* Espacio entre los botones */
+  font-size: 15px;
+  padding: 5px;
+  min-width: 100px; /* Ancho mínimo para pantallas pequeñas */
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+ion-header {
+  padding: 15px 0; /* Asegura un espacio interno adecuado */
+  height: auto;
+  background-color: #221E1F; 
+  color: white;
+}
+
+.toolbar-negro {
+  background-color: #221E1F; 
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 5px; /* Espacio entre los botones */
+  font-size: 20px;
+  padding: 5px;
+  min-width: 110px; /* Ancho mínimo para pantallas pequeñas */
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.foto-portada {
+  width: 250px;         // Ajusta el ancho según lo necesites
+  height: auto;         // Mantén la proporción de la imagen
+  max-width: 100%;      // Asegúrate de que no exceda el tamaño del contenedor
+  display: block;       // Evita que se comporte como un elemento inline
+}

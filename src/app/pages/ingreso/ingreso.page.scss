@@ -1,0 +1,150 @@
+.enmarcar-ingreso {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+.ancho-boton {
+  width: 140px;
+}
+
+
+ion-footer {
+  padding: 10px 0; /* Asegura un espacio interno adecuado */
+  height: auto; /* Permite ajustar dinámicamente la altura según el contenido */
+  background-color: #221E1F;
+  color: white; 
+
+  display: flex; /* Usamos flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si hay más de una línea de texto */
+  text-align: center;
+}
+
+ion-item{
+  --padding-bottom: 20px;
+  --background: transparent;
+}
+.input-password {
+  display: flex;
+  align-items: center; /* Alinea el contenido verticalmente */
+}
+ion-input {
+  align-items: center;
+}
+
+ion-icon {
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.gradient-border {
+  position: relative;
+  padding: 10px; /* Espaciado para que el borde no se solape con el contenido */
+  border-radius: 15px; /* Ajusta el radio de esquina según sea necesario */
+}
+
+// .gradient-border::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: linear-gradient(
+//     to bottom, 
+//     #221E1F, /* Color oscuro desde arriba */
+//     #221e1fbc 10%, /* Se desvanece en color blanco semi-transparente */
+//     #ffffff20 50%, /* Mantiene el color blanco semi-transparente en el centro */
+//     #221e1fbc 80%, /* Se desvanece hacia el color oscuro */
+//     #221e1f /* Color oscuro desde abajo */
+//   );
+//   z-index: -1; /* Asegura que el degradado esté detrás del contenido */
+// }
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   /* Asegúrate de que coincida con el radio de la tarjeta */
+  background: linear-gradient(to bottom, #ffffff20, #221E1F); /* Cambia estos colores según sea necesario */
+  z-index: -1; /* Coloca el degradado detrás del contenido del card */
+}
+
+ion-header {
+  padding: 15px 0; /* Asegura un espacio interno adecuado */
+  height: auto;
+  background-color: #221E1F; 
+  color: white;
+}
+
+
+
+.center-container {
+  position: absolute; /* Permite que el div ocupe toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex; /* Para centrar el contenido si es necesario */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;          /* Ocupa toda la altura de la pantalla */
+}
+
+.foto-portada {
+  width: 100%;
+}
+
+@media screen and (orientation: landscape) {
+  .center-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 80%;           /* Ocupa toda la altura de la pantalla */
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .foto-portada {
+    width: 30%;
+  }
+}
+
+.centrar {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+}
+
+h1 {
+  color: black;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente si es necesario */
+  height: 100%; /* Asegúrate de que el contenedor tenga altura */
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto */
+  font-size: 12px; /* Mantén el tamaño de la fuente */
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+  width: auto; /* Asegura que el ancho es dinámico */
+  display: inline-block; /* Asegura que el botón no se expanda como bloque */
+  box-sizing: content-box; /* Limita el tamaño al contenido y padding */
+}
+
+
+
+

@@ -1,0 +1,214 @@
+.margin-top {
+  margin-top: 20px;
+}
+
+ion-input, ion-select {
+  color: gray;
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.font-size-12 {
+  font-size: 12px;
+  color: gray;
+}
+
+.date-width {
+  width: 105px;
+}
+
+.cell-align-right {
+  text-align: right;
+}
+
+.cell-width-0 {
+  width: 0px;
+}
+
+.fondo-titulo{
+  background-color: rgb(0, 40, 85);
+}
+
+.cerrar-sesion ion-button {
+  border: 2px solid black; /* Borde de 2px de grosor, color negro */
+  border-radius: 4px; /* Opcional: bordes redondeados */
+  display: flex;          /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+ion-footer {
+  padding: 5px 0; /* Asegura un espacio interno adecuado */
+  height: auto; /* Permite ajustar dinámicamente la altura según el contenido */
+  background-color: #221E1F; /* Puedes ajustar el color del fondo si es necesario */
+  min-height: 50px;
+}
+
+ion-header {
+  padding: 5px 0; /* Asegura un espacio interno adecuado */
+  height: auto;
+  background-color: #221E1F; 
+}
+
+.foto-encabezado {
+  max-width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; 
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 5px; /* Espacio entre los botones */
+  font-size: 12px;
+  padding: 5px;
+  min-width: 60px; /* Ancho mínimo para pantallas pequeñas */
+  max-width: 200px;
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+.contenedor {
+  position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
+  z-index: 0; /* Asegura que el contenedor no esté por encima del botón */
+}
+
+.divider-line {
+  border: none;            /* Eliminar el borde predeterminado */
+  border-top: 1px solid #a09f9f; /* Color y grosor de la línea */
+  margin: 10px 0;         /* Espacio superior e inferior */
+}
+
+
+.margin-top {
+  margin-top: 20px;
+}
+
+ion-input, ion-select {
+  color: gray;
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.font-size-12 {
+  font-size: 12px;
+  color: gray;
+}
+
+.date-width {
+  width: 105px;
+}
+
+.cell-align-right {
+  text-align: right;
+}
+
+.cell-width-0 {
+  width: 0px;
+}
+
+.fondo-titulo{
+  background-color: rgb(0, 40, 85);
+}
+
+.cerrar-sesion ion-button {
+  border: 2px solid black; /* Borde de 2px de grosor, color negro */
+  border-radius: 4px; /* Opcional: bordes redondeados */
+  display: flex;          /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+}
+
+ion-footer {
+  padding: 5px 0; /* Asegura un espacio interno adecuado */
+  height: auto; /* Permite ajustar dinámicamente la altura según el contenido */
+  background-color: #221E1F; /* Puedes ajustar el color del fondo si es necesario */
+}
+
+ion-header {
+  padding: 5px 0; /* Asegura un espacio interno adecuado */
+  height: auto;
+  background-color: #221E1F; 
+}
+
+.foto-encabezado {
+  max-width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; 
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 5px; /* Espacio entre los botones */
+  font-size: 12px;
+  padding: 5px;
+  min-width: 60px; /* Ancho mínimo para pantallas pequeñas */
+  max-width: 200px;
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+.contenedor {
+  position: relative; /* Asegura que los elementos hijos se posicionen correctamente */
+  z-index: 0; /* Asegura que el contenedor no esté por encima del botón */
+}
+
+.divider-line {
+  border: none;            /* Eliminar el borde predeterminado */
+  border-top: 1px solid #a09f9f; /* Color y grosor de la línea */
+  margin: 10px 0;         /* Espacio superior e inferior */
+}
+
+ion-header {
+  padding: 15px 0; /* Asegura un espacio interno adecuado */
+  height: auto;
+  background-color: #221E1F; 
+  color: white;
+}
+
+.toolbar-negro {
+  background-color: #221E1F; 
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 5px; /* Espacio entre los botones */
+  font-size: 15px;
+  padding: 5px;
+  min-width: 110px; /* Ancho mínimo para pantallas pequeñas */
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.foto-portada {
+  width: 250px;         // Ajusta el ancho según lo necesites
+  height: auto;         // Mantén la proporción de la imagen
+  max-width: 100%;      // Asegúrate de que no exceda el tamaño del contenedor
+  display: block;       // Evita que se comporte como un elemento inline
+}
+
+.center {
+  display: flex;
+  justify-content: center;  /* Centra el contenido horizontalmente */
+}

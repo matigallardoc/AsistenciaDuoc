@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="Dark">
+
+    <ion-title>
+      <img alt="DUOC" src="../../../assets/images/logo_negro.png" class="foto-portada" /> 
+    </ion-title>
+
+    <div slot="end">
+
+      <ion-button fill="clear" size="large" (click)="logout()">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- El div con id "mapId" será donde se mostrará el mapa -->
+  <div id="mapId" style="height: 100%;"></div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="ion-text-center" color="dark">
+    <ion-button class="small-button" shape="round" size="small"
+        (click)="goToDUOC()" >
+      DUOC
+    </ion-button>
+
+    <ion-button class="small-button" shape="round" size="small"
+        (click)="goToMyPosition()">
+      {{"Mapa.aqui" | translate}}
+    </ion-button>
+
+    <ion-button class="small-button" shape="round" size="small"
+        (click)="showRouteToDuoc()">
+        {{"Mapa.ruta" | translate}}
+    </ion-button>
+
+    <div *ngIf="distance">
+      <br>
+      {{ distance }}
+    </div>
+  </ion-toolbar>
+</ion-footer>

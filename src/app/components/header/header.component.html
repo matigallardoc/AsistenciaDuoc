@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="Dark">
+
+    <ion-title>
+      <img alt="DUOC" src="../../../assets/images/logo_negro.png" class="foto-portada" /> 
+    </ion-title>
+
+    <div slot="end">
+
+      <ion-button class="small-button"  size="large" (click)="showTest()" *ngIf="!isAdmin" >
+        <ion-icon name="qr-code-outline" color="light"></ion-icon>
+        &nbsp;{{ 'header.prueba' | translate }}
+      </ion-button>
+
+      <ion-button fill="clear" size="large" (click)="startScan()" *ngIf="!isAdmin" >
+        <ion-icon name="qr-code-outline" color="light"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" size="large" (click)="logout()">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>

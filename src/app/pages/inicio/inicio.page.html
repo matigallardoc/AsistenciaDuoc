@@ -1,0 +1,40 @@
+<app-header
+  (clickQrTestButton)="startQrTest()"
+  (clickQrScanButton)="startQrScan()">
+</app-header>
+
+<!-- (clickQrTestButton)="startQrTest()"
+  (clickQrScanButton)="startQrScan()" -->
+
+<ion-content [fullscreen]="true">
+
+  <app-qrwebscanner 
+    *ngIf="selectedComponent === 'qrwebscanner'" 
+    (scanned)="webQrScanned($event)"
+    (stopped)="webQrStopped()">
+  </app-qrwebscanner>
+
+  <app-welcome 
+    *ngIf="selectedComponent === 'welcome'">
+  </app-welcome>
+
+  <app-dinosaur 
+    *ngIf="selectedComponent === 'dinosaur'">
+  </app-dinosaur>
+
+  <app-misdatos 
+    *ngIf="selectedComponent === 'misdatos'">
+  </app-misdatos>
+
+  <app-usuarios
+  *ngIf="selectedComponent === 'usuarios'">
+    
+  </app-usuarios>
+
+  <app-forum 
+    *ngIf="selectedComponent === 'forum'">
+  </app-forum>
+
+</ion-content>
+
+<app-footer></app-footer>

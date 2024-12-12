@@ -1,0 +1,143 @@
+<ion-header>
+  <ion-toolbar color="Dark">
+    <ion-title>
+      <img alt="DUOC" src="../../../assets/images/logo_negro.png" class="foto-portada" />
+    </ion-title>
+    <div slot="end">
+      <ion-button fill="clear" size="large" (click)="logout()">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  
+  <div class="ion-text-center">
+    <h3>{{ 'WelcomePage.Title.Wellcome' | translate }}</h3>
+    <h3> {{ user.firstName}} {{ user.lastName }} </h3>
+    <hr class="divider-line">
+    <div>
+      <!-- <ion-item #itemCuenta class="compact-item">
+        <ion-label position="floating">admin?</ion-label>
+        <ion-input type="text" [(ngModel)]="user.isAdmin"></ion-input>
+      </ion-item> -->
+      <ion-item #itemCuenta class="compact-item">
+        <ion-label position="floating">{{ "MisDatos.cuenta" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.userName"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemNombre class="compact-item">
+        <ion-label position="floating">{{"MisDatos.nombre" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.firstName"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemApellido class="compact-item">
+        <ion-label position="floating">{{"MisDatos.apellido" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.lastName"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemCorreo class="compact-item">
+        <ion-label position="floating">{{"MisDatos.correo" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemDireccion class="compact-item">
+        <ion-label position="floating">{{"MisDatos.direccion" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.address"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemPreguntaSecreta class="compact-item">
+        <ion-label position="floating">{{"MisDatos.pregunta" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.secretQuestion"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemRespuestaSecreta class="compact-item">
+        <ion-label position="floating">{{"MisDatos.respuesta" | translate}}</ion-label>
+        <ion-input type="text" [(ngModel)]="user.secretAnswer"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemPassword class="compact-item">
+        <ion-label position="floating">{{"MisDatos.contraseña" | translate}}</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemRepetirPassword class="compact-item">
+        <ion-label position="floating">{{"MisDatos.repcontraseña" | translate}}</ion-label>
+        <ion-input type="password" [(ngModel)]="repeatPassword"></ion-input>
+      </ion-item>
+  
+      <ion-item #itemEducacion class="font-size-12" class="compact-item">
+        <ion-select  [(ngModel)]="user.educationalLevel!.id"
+            (ionChange)="actualizarNivelEducacional($event)"
+            label='{{"MisDatos.educacion" | translate}}' position="floating" >
+          <ion-select-option *ngFor="let educationalLevel of listaNivelesEducacionales" 
+            [value]="educationalLevel.id" >
+              {{educationalLevel.name}}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      
+      <!-- AYUDAAAA -->
+  
+  
+      <ion-item #itemFechaNacimiento class="compact-item">
+        <table>
+          <tr>
+            <td class="font-size-12">
+              {{"MisDatos.nacimiento" | translate}}
+            </td>
+            <td class="cell-align-right" >
+              <input 
+                matInput 
+                [matDatepicker]="fechaNacimiento" 
+                [(ngModel)]="user.dateOfBirth"
+                placeholder="dd/mm/yyyy"
+                class="date-width"
+                readonly>
+            </td>
+            <td class="cell-width-0">
+              <mat-datepicker-toggle matSuffix [for]="fechaNacimiento"></mat-datepicker-toggle>
+              <mat-datepicker #fechaNacimiento></mat-datepicker>
+            </td>
+          </tr>
+        </table>
+      </ion-item>
+  
+      <ion-button class="small-button" shape="round" (click)="Actualizar()">Actualizar</ion-button>
+  
+  
+  
+      <!-- <ion-item #itemFechaNacimiento>
+        
+        <table>
+          <tr>
+            <td class="font-size-12">
+              Nacimiento
+            </td>
+            <td class="cell-align-right">
+              <input 
+                matInput 
+                [matDatepicker]="dateOfBirth" 
+                [(ngModel)]="user.dateOfBirth"
+                placeholder="dd/mm/yyyy"
+                class="date-width">
+            </td>
+            <td class="cell-width-0">
+              <mat-datepicker-toggle matSuffix [for]="user.dateOfBirth"></mat-datepicker-toggle>
+              <mat-datepicker #fechaNacimiento></mat-datepicker>
+            </td>
+          </tr>
+        </table>
+      </ion-item> -->
+      <!-- boton actualizar -->
+  
+    </div>
+  </div>
+
+  
+
+
+</ion-content>

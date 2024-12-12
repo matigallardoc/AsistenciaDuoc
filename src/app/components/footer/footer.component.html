@@ -1,0 +1,36 @@
+<ion-footer>
+  <ion-toolbar color="dark" style="padding-bottom: 4px">
+    <ion-segment 
+      value="welcome" 
+      (ionChange)="segmentChanged(selectedComponent)"
+      [(ngModel)]="selectedComponent"
+    >
+      <ion-segment-button value="welcome">
+        <ion-icon name="home-outline"></ion-icon>
+        {{ "HomePage.Button.Wellcome" | translate }}
+      </ion-segment-button>
+      
+      <ion-segment-button #dinoButton value="dinosaur" *ngIf="!isAdmin" >
+        <ion-icon name="library-outline"></ion-icon>
+        {{ "HomePage.Button.Dinosaur" | translate }}
+      </ion-segment-button>
+      
+      <ion-segment-button value="misdatos">
+        <ion-icon name="information-circle-outline"></ion-icon>
+        {{ "HomePage.Button.MisDatos" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button value="forum">
+        <ion-icon name="pencil-outline"></ion-icon>
+        {{ "HomePage.Button.Forum" | translate }}
+      </ion-segment-button>
+
+      <ion-segment-button value="usuarios" *ngIf="isAdmin">
+        <ion-icon name="pencil-outline"></ion-icon>
+        {{"usuario.usuario" | translate}}
+      </ion-segment-button>
+
+    </ion-segment>
+
+  </ion-toolbar>
+</ion-footer>

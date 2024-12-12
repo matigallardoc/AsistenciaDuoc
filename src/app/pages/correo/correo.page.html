@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="Dark">
+
+    <ion-title>
+      <img alt="DUOC" src="../../../assets/images/logo_negro.png" class="foto-portada" /> 
+    </ion-title>
+
+    <div slot="end">
+
+      <ion-button fill="clear" size="large" (click)="logout()">
+        <ion-icon name="log-out-outline" color="light"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+    <ion-title class="ion-padding-top">
+      <ion-label class="ion-text-center">
+        <h2>
+          {{"Correo.mensaje" | translate}}
+        </h2>
+        <hr>
+        <h4>
+          {{"Correo.paso" | translate}}
+        </h4>
+      </ion-label>
+    </ion-title>
+  
+    <ion-card>
+      
+      <ion-item #itemCorreo>
+        <ion-input [(ngModel)]="email"  class="ion-text-left" label="Correo" labelPlacement="floating"></ion-input>
+      </ion-item>
+    
+      <div #botonRecuperar size="12" class="centrar">
+        <ion-button class="small-button" shape="block" size="small" (click)="ingresar()">{{"Correo.validar" | translate}}</ion-button>
+      </div>
+    
+    </ion-card>
+
+    <div class="button-group" color="dark">
+      <!-- <ion-button class="small-button" size="small" (click)="navegar('/ingreso')">Iniciar sesión</ion-button> -->
+    </div>
+  
+  
+  
+  
+  
+  </ion-content>
+  <ion-footer>
+  </ion-footer>
+
+
+

@@ -1,0 +1,23 @@
+.user-card {
+  width: 100%;  /* Asegura que los cards ocupen todo el ancho disponible */
+  margin-bottom: 5px; /* Espaciado entre los cards */
+  box-sizing: border-box;  /* Asegura que el padding y el borde no afecten el ancho total */
+}
+
+.card-header-content {
+  display: flex;
+  justify-content: space-between;  /* Espacia los elementos dentro del card */
+  align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.user-info {
+  flex-grow: 1;  /* Hace que el bloque de información de usuario ocupe el espacio disponible */
+}
+
+ion-card-header, ion-card-content {
+  padding: 3px;  /* Espaciado dentro del card */
+}
+
+ion-button {
+  margin-left: auto;  /* Alinea el botón de eliminar a la derecha */
+}

@@ -1,0 +1,138 @@
+{
+    "AppName": "Asistencia Duoc",
+    "AuthorText": "Desarrollado por:",
+    "Author": "Cristián Gómez Vega",
+    "Language": "Idioma",
+    "Language.English": "English",
+    "Language.Spanish": "Español",
+    "Language.Mapudungun": "Mapudungun",
+    
+    
+    "Start.StartNewExperience": "Comienza una nueva experiencia",
+
+    "header.prueba": "Prueba",
+
+    "Login.Title.Login": "Iniciar sesión",
+    "Login.Label.Email": "Correo",
+    "Login.Placeholder.Email": "Ingresa aquí tu correo",
+    "Login.Label.Password": "Contraseña",
+    "Login.Placeholder.Password": "Ingresa aquí tu contraseña",
+    "Login.Button.Login": "Ingresar",
+    "Login.Button.Signin": "Registrarse",
+    "Login.Button.ForgotPassword": "Olvidé mi contraseña",
+    "Login.Button.DarkMode": "Oscuro",
+    "ruta.Duoc": "Ruta a DUOC",
+    "Login.tema" : "Tema",
+    "Registro.Button.Login" : "Registrarme",
+
+    "WelcomePage.Title.Wellcome": "Bienvenido(a)",
+
+    "HomePage.Button.Wellcome": "Inicio",
+    "HomePage.Button.Scan": "Escanear",
+    "HomePage.Button.Dinosaur": "Mis clase",
+    "HomePage.Button.Forum": "Foro",
+    "HomePage.Button.MisDatos": "Mis datos",
+
+    "ThemePage.Label.ColorTheme": "Tema de color:",
+    "ThemePage.Color.Light": "Claro",
+    "ThemePage.Color.Dark": "Oscuro",
+    "ThemePage.Color.Green": "Verde",
+    "ThemePage.Color.Red": "Rojo",
+    "ThemePage.Color.Facebook": "Facebook",
+    "ThemePage.Color.Instagram": "Instagram",
+    "ThemePage.Color.Duoc": "DUOC",
+    
+    "ThemePage.Button.Primary": "Botón Primario",
+    "ThemePage.Button.Secondary": "Botón Secundario",
+    "ThemePage.Button.Tertiary": "Botón Terciario",
+    "ThemePage.Button.Success": "Botón Éxito",
+    "ThemePage.Button.Warning": "Botón Advertencia",
+    "ThemePage.Button.Danger": "Botón Peligro",
+    "ThemePage.Button.Light": "Botón Claro",
+    "ThemePage.Button.Dark": "Botón Oscuro",
+    "ThemePage.Button.Home": "Inicio",
+    "ThemePage.Button.Logout": "Salir",
+    
+    "ThemePage.Card.Title": "Título de la Tarjeta",
+    "ThemePage.Card.Subtitle": "Subtítulo de la Tarjeta",
+    "ThemePage.Card.Content": "Este es el contenido de la tarjeta. Puedes personalizar los colores de la tarjeta y su contenido.",
+    
+    "ThemePage.List.Title": "Listas",
+    "ThemePage.List.Item1": "Elemento de Lista 1",
+    "ThemePage.List.Item2": "Elemento de Lista 2",
+    "ThemePage.List.Item3": "Elemento de Lista 3",
+    
+    "ThemePage.Calendar.Title": "Calendarios",
+    
+    "ThemePage.Form.Title": "Ingreso de datos",
+    "ThemePage.Form.NameLabel": "Nombre",
+    "ThemePage.Form.NamePlaceholder": "Ingresa tu nombre",
+    "ThemePage.Form.DescriptionLabel": "Descripción",
+    "ThemePage.Form.DescriptionPlaceholder": "Escribe aquí una descripción...",
+    "ThemePage.Form.ToggleLabel": "Activar notificaciones",
+    "ThemePage.Form.CheckboxLabel": "Acepto los términos",
+
+    "MiClase.qr" : "Escanea un codigo QR para registrar tu asistencia a clases.",
+    "MiClase.bloqueinicio" : "Bloque de inicio:",
+    "MiClase.bloquetermino" : "Bloque de termino:",
+    "MiClase.dia" : "Dia:",
+    "MiClase.horainicio" : "Hora Inicio:",
+    "MiClase.horafin" : "Hora Fin:",
+    "MiClase.idasignatura" : "ID asignatura:",
+    "MiClase.nombreasignatura" : "Nombre Asignatura:",
+    "MiClase.nombreprofesor" : "Nombre Profesor:",
+    "MiClase.seccion" : "Sección:",
+    "MiClase.sede" : "Sede:",
+
+    "MisDatos.saludo" : "Datos de",
+    "MisDatos.cuenta" : "Cuenta",
+    "MisDatos.nombre" : "Nombre",
+    "MisDatos.apellido" : "Apellido",
+    "MisDatos.correo" : "Correo",
+    "MisDatos.direccion" : "Dirección",
+    "MisDatos.pregunta" : "Pregunta Secreta",
+    "MisDatos.respuesta" : "Respuesta Secreta",
+    "MisDatos.contraseña" : "Contraseña",
+    "MisDatos.repcontraseña" : "Repetir Contraseña",
+    "MisDatos.educacion" : "Educación",
+    "MisDatos.nacimiento" : "Nacimiento",
+
+    "Correo.mensaje" : "Recuperación de contraseña",
+    "Correo.paso" : "Paso 1: Ingresa tu correo",
+    "Correo.validar":"Recuperar contraseña",
+
+    "Incorrecto.mensaje": "Los datos ingresados no son correctos.",
+    "Incorrecto.volver": "Volver al inicio de sesión",
+
+    "Pregunta.mensaje":"Recuperar contraseña",
+    "Pregunta.paso": "Paso 2: responda la pregunta secreta",
+    "Pregunta.validar": "Recuperar contraseña",
+    "Pregunta.salir": "Iniciar Sesión",
+
+    "Correcto.mensaje":"Los datos ingresados son correctos.",
+    "Correcto.contraseña":"Tu contraseña es:",
+    "Correcto.salir":"Volver al inicio de sesión",
+
+    "Mapa.aqui": "Aquí",
+    "Mapa.ruta" : "Ruta",
+
+    "QR.escaneo": "Detener escaneo de QR",
+
+    "Foro.gestion" : "Gestión de Publicaciones",
+    "Foro.titulo" : "Título",
+    "Foro.titplaceholder" : "Ingresa el título de la publicación",
+    "Foro.descripcion" : "Descripción",
+    "Foro.descplaceholder" : "Escribe el contenido de la publicación",
+    "Foro.limpiar": "Limpiar",
+    "Foro.actualizar": "Actualizar",
+    "Foro.guardar" : "Guardar",
+    "Foro.pubrecientes": "Publicaciones Recientes",
+    "Foro.publicacion": "Publicación",
+    "Foro.editar" : "Editar",
+    "Foro.eliminar" : "Eliminar",
+
+    "locale": "es",
+
+    "usuario.usuario" : "Usuario",
+    "usuario.titulo" : "Usuarios"
+}

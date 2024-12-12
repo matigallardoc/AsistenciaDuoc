@@ -1,0 +1,28 @@
+<div class="ion-text-center">
+  <h3>{{"usuario.titulo" | translate}}</h3>
+  <ion-list>
+    <ion-item *ngFor="let user of users">
+      <ion-card class="user-card">
+        <ion-card-header>
+          <div class="card-header-content">
+            <div class="user-info">
+              <ion-card-title>{{ user.firstName }} {{ user.lastName }}</ion-card-title>
+              <p>{{ user.email }}</p>
+            </div>
+
+            <!-- Botón para eliminar el usuario, solo visible si no es "Admin" -->
+            <ion-button *ngIf="user.firstName.toLowerCase() !== 'admin'" 
+                        (click)="eliminarUsuario(user)" 
+                        fill="clear" 
+                        color="danger" 
+                        slot="end">
+              <ion-icon name="trash-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</div>
+
+

@@ -1,0 +1,29 @@
+.date-width {
+  background-color: white; /* Cambia el fondo a blanco */
+  color: black;            /* Cambia el texto a negro para mejor contraste */
+  border: 1px solid gray;  /* Agrega un borde si es necesario */
+}
+
+.divider-line {
+  border: none;            /* Eliminar el borde predeterminado */
+  border-top: 1px solid #a09f9f; /* Color y grosor de la línea */
+  margin: 10px 0;         /* Espacio superior e inferior */
+}
+
+.small-button {
+  --background: #F1B634 !important; /* Color de fondo rojo */
+  --color: rgb(0, 0, 0) !important; /* Color del texto blanco */
+  flex: 1 1 calc(25% - 10px); /* Ajusta para que 4 botones quepan en una fila */
+  margin: 5px; /* Espacio entre los botones */
+  font-size: 20px;
+  padding: 5px;
+  min-width: 110px; /* Ancho mínimo para pantallas pequeñas */
+  position: relative; /* Permite que se aplique el z-index */
+  z-index: 1; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+.scrollable-container {
+  max-height: 600px; /* Ajusta la altura según sea necesario */
+  overflow-y: auto;  /* Esto habilita el scroll vertical */
+  padding: 10px;     /* Puedes añadir un poco de espacio interno */
+}

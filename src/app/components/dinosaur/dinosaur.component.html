@@ -1,0 +1,71 @@
+<ion-content>
+  <!-- <img class="background-image" src="../../../assets/images/trex-h.jpg" *ngIf="dino"> -->
+  <div class="background-image" *ngIf="miclase"></div>
+
+  <ion-card *ngIf="miclase" class="styled-card">
+    <ion-card-header>
+      <!-- <ion-card-title class="small-text">Detalles de la Clase</ion-card-title> -->
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid fixed class="dino-content">
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.bloqueinicio" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.bloqueInicio }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.bloquetermino" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.bloqueTermino }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.dia" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.dia }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.horainicio" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.horaInicio }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.horafin" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.horaFin }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.idasignatura" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.idAsignatura }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.nombreasignatura" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.nombreAsignatura }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.nombreprofesor" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.nombreProfesor }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.seccion" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.seccion }}</ion-col>
+        </ion-row>
+        <div class="divider"></div> <!-- Línea divisoria más discreta -->
+        <ion-row>
+          <ion-col size="5" class="label small-text">{{"MiClase.sede" | translate}}</ion-col>
+          <ion-col size="7" class="small-text">{{ miclase.sede }}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  
+  
+
+  <div class="center-frame">
+    <div *ngIf="!miclase" class="picture-frame ion-text-center">
+      <img class="you-must-scan" src="/assets/images/escanear-qr.png">
+    </div>
+  </div>
+</ion-content>
