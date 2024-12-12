@@ -1,1 +1,1 @@
-ionic cap run android -l --external --host=192.168.63.29 --port=8100 --target 6a1e79c2
+ionic cap run android -l --external --host=192.168.4.26 --port=8100 --target 78780ccd
